@@ -12,7 +12,7 @@ app = Flask(__name__)
 def index():
 	
 
-    response        = urllib.urlopen('http://api.fixer.io/latest?base=AUD')
+    response        = urllib.request.urlopen('http://api.fixer.io/latest?base=AUD')
     data  = json.load(response)
 	
 
